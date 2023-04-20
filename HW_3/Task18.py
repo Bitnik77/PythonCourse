@@ -16,9 +16,9 @@ number = int(input('Задайте число: '))
 min = abs(number - lst[0])
 count = 0
 
-for i in range(len(lst)):
-    if min > abs(number - lst[i]):
-        min = abs(number - lst[i])
+for i in range(n):
+    if min := abs(number - lst[i]) < min:
+        # min = abs(number - lst[i])
         count = i
 
 print(lst[count])
