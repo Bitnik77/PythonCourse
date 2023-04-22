@@ -17,7 +17,7 @@ min = abs(number - lst[0])
 count = 0
 
 for i in range(n):
-    if min := abs(number - lst[i]) < min:
+    if min := abs(number - lst[i]) < min:  # так и не сделал
         # min = abs(number - lst[i])
         count = i
 
