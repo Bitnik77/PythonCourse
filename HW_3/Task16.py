@@ -15,7 +15,7 @@ print(lst)
 number = int(input('Введите искомое число: '))
 count = 0
 
-for i in range(len(lst)):
+for i in range(n):
     if number == lst[i]:
         count += 1
 

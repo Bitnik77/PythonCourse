@@ -8,6 +8,22 @@
 
 word = input('Введите слово: ').upper()
 
+diction = {1: 'AEIOULNSTRАВЕИНОРСТ', 2: 'DGДКЛМПУ', 3: 'BCMPБГЁЬЯ',
+           4: 'FHVWYЙЫ', 5: 'KЖЗХЦЧ', 8: 'JXШЭЮ', 10: 'QZФЩЪ'}
+
+count = 0
+for char in word:
+    for key, value in diction.items():
+        if char in value:
+            count += key
+print(count)
+
+'''
+Или так со списком словарей, когда снутри списка перебирается еще каждый словарь
+for item in diction: - вот это
+
+word = input('Введите слово: ').upper()
+
 diction = [{1: 'AEIOULNSTRАВЕИНОРСТ', 2: 'DGДКЛМПУ', 3: 'BCMPБГЁЬЯ',
            4: 'FHVWYЙЫ', 5: 'KЖЗХЦЧ', 8: 'JXШЭЮ', 10: 'QZФЩЪ'}]
 
@@ -18,3 +34,4 @@ for char in word:
             if char in value:
                 count += key
 print(count)
+'''
